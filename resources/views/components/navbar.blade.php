@@ -9,14 +9,14 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-
           <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">Home</x-nav-link>
           <x-nav-link href="{{ route('kontak') }}" :active="request()->routeIs('kontak')">Contact</x-nav-link>
           <x-nav-link href="{{ route('profile') }}" :active="request()->routeIs('profile')">Profile</x-nav-link>
           <x-nav-link href="{{ route('students.index') }}" :active="request()->routeIs('students.*')">Student</x-nav-link>
           <x-nav-link href="{{ route('guardians.index') }}" :active="request()->routeIs('guardians.*')">Guardian</x-nav-link>
           <x-nav-link href="{{ route('classrooms.index') }}" :active="request()->routeIs('classrooms.*')">Classroom</x-nav-link>
-
+          <x-nav-link href="{{ route('teachers.index') }}" :active="request()->routeIs('teachers.*')">Teacher</x-nav-link>
+          <x-nav-link href="{{ route('subjects.index') }}" :active="request()->routeIs('subjects.*')">Subject</x-nav-link>
         </div>
 
           </div>

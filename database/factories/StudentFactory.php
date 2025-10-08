@@ -20,7 +20,7 @@ class StudentFactory extends Factory
             'name' => $this->faker->name(),
             'birthday' => $this->faker->date('Y-m-d'),
             'email' => $this->faker->unique()->safeEmail(),
-            'addres' => $this->faker->address(),
+            'address' => $this->faker->address(),
         ];
     }
 }
